@@ -1,15 +1,21 @@
+## Quick Navigation
+
+- [Installing Node.js on Windows](#installing-nodejs-on-windows)
+- [Installing Node.js on macOS](#installing-nodejs-on-macos)
+- [Running the Project](#running-the-project)
+
 # Installing Node.js on Windows
 
 **Step 1: Download Node.js**
 
 - Go to:
   - <https://nodejs.org>
-  - Go to "Get Node.Js"
-  - Select prebuilt NodeJS and download the installer
+  - Go to "Get Node.js"
+  - Select **Prebuilt Node.js** and download the installer
 
 **Step 2: Run the Installer**
 
-- Double-click the downloaded .msi file.
+- Double-click the downloaded `.msi` file.
 - Click **Next**.
 - Accept the license agreement.
 - Click **Next**.
@@ -18,7 +24,9 @@
 
 The default installation path is usually:
 
-C:\\Program Files\\nodejs\\
+```text
+C:\Program Files\nodejs\
+```
 
 It is generally best to keep the default location.
 
@@ -31,33 +39,43 @@ Click **Next**.
 - Wait for the installation to complete.
 - Click **Finish**.
 
-**Step 6: Verify the Installation**
+**Step 5: Verify the Installation**
 
 Open:
 
-Command Prompt (CMD)
+- Command Prompt (CMD)
 
 or
 
-PowerShell
+- PowerShell
 
 Run:
 
+```bash
 node -v
+```
 
 You should see something similar to:
 
+```bash
 v22.17.0
+```
 
 Now verify npm:
 
+```bash
 npm -v
+```
 
 Example output:
 
+```bash
 10.9.2
+```
 
 If both commands work, the installation was successful.
+
+---
 
 # Installing Node.js on macOS
 
@@ -65,10 +83,8 @@ If both commands work, the installation was successful.
 
 - Go to:
   - <https://nodejs.org>
-  - Go to "Get Node.Js"
-  - Select prebuilt NodeJS and download the installer
-
----
+  - Go to "Get Node.js"
+  - Select **Prebuilt Node.js** and download the installer
 
 **Step 2: Run the Installer**
 
@@ -82,30 +98,66 @@ If both commands work, the installation was successful.
 4. Wait for the installation to complete.
 5. Click **Close**.
 
----
-
 **Step 3: Verify the Installation**
 
 Open **Terminal**:
 
 **Applications → Utilities → Terminal**
 
-### Check Node.js
-
 Run:
 
+```bash
 node -v
+```
 
 You should see something similar to:
 
+```bash
 v22.17.0
+```
 
 Now verify npm:
 
+```bash
 npm -v
+```
 
 Example output:
 
+```bash
 10.9.2
+```
 
 If both commands work, the installation was successful.
+
+---
+
+# Running the Project
+
+After installing Node.js, open the project folder in your terminal.
+
+### Install Dependencies
+
+Run:
+
+```bash
+npm install
+```
+
+This will download and install all required project dependencies.
+
+### Start the Development Server
+
+Run:
+
+```bash
+npm run dev
+```
+
+The development server will start and display a local URL, for example:
+
+```text
+http://localhost:3000
+```
+
+Open the displayed URL in your browser to view the application.
