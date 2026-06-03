@@ -1,73 +1,60 @@
-# React + TypeScript + Vite
+**NodeJS installation guide WINDOWS**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Step 1: Download Node.js**
 
-Currently, two official plugins are available:
+- Go to:
+  - <https://nodejs.org>
+  - Go to "Get Node.Js"
+  - Select prebuilt NodeJS and download the installer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Step 2: Run the Installer**
 
-## React Compiler
+- Double-click the downloaded .msi file.
+- Click **Next**.
+- Accept the license agreement.
+- Click **Next**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Step 3: Choose the Installation Location**
 
-## Expanding the ESLint configuration
+The default installation path is usually:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+C:\\Program Files\\nodejs\\
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+It is generally best to keep the default location.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Click **Next**.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Step 4: Install**
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Click **Install**.
+- If Windows asks for administrator permission, click **Yes**.
+- Wait for the installation to complete.
+- Click **Finish**.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+**Step 6: Verify the Installation**
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Open:
+
+Command Prompt (CMD)
+
+or
+
+PowerShell
+
+Run:
+
+node -v
+
+You should see something similar to:
+
+v22.17.0
+
+Now verify npm:
+
+npm -v
+
+Example output:
+
+10.9.2
+
+If both commands work, the installation was successful.
