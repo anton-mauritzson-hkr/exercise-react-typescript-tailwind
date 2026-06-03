@@ -61,20 +61,16 @@ If both commands work, the installation was successful.
 
 # Installing Node.js on macOS
 
-## Step 1: Download Node.js
+**Step 1: Download Node.js**
 
-1. Open your web browser.
-2. Go to:
-   - https://nodejs.org
-3. Choose one of the following versions:
-   - **LTS (Long-Term Support)** – Recommended for most users.
-   - **Current** – Includes the latest features but may be less stable.
-
-Download the **LTS version** for macOS.
+- Go to:
+  - <https://nodejs.org>
+  - Go to "Get Node.Js"
+  - Select prebuilt NodeJS and download the installer
 
 ---
 
-## Step 2: Run the Installer
+**Step 2: Run the Installer**
 
 1. Open the downloaded `.pkg` file.
 2. Follow the installation wizard:
@@ -88,7 +84,7 @@ Download the **LTS version** for macOS.
 
 ---
 
-## Step 3: Verify the Installation
+**Step 3: Verify the Installation**
 
 Open **Terminal**:
 
@@ -98,29 +94,18 @@ Open **Terminal**:
 
 Run:
 
-```bash
 node -v
-```
 
-Example output:
+You should see something similar to:
 
-```bash
 v22.17.0
-```
 
-### Check npm
+Now verify npm:
 
-Run:
-
-```bash
 npm -v
-```
 
 Example output:
 
-```bash
 10.9.2
-```
 
-If both commands return version numbers, the installation was successful.
-```
+If both commands work, the installation was successful.
